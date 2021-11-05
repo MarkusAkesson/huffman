@@ -1,0 +1,16 @@
+[package]
+name = "huffman"
+version = "0.1.0"
+authors = ["Markus Akesson <macke.95_06@hotmail.com>"]
+edition = "2021"
+
+[dependencies]
+rayon = "1.0"
+chrono = "0.4"
+
+
+[profile.release]
+opt-level = 3
+debug  = 0
+lto = true
+overflow-checks = false
